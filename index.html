@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Build a Survey Form</title>
+</head>
+
+<body>
+  <!-- Initial Form Questions -->
+  <h1 id="title">Survey Form</h1>
+  <p id="description">Please tell me everything.. about yourself...</p>
+
+  <div class="container" id="form-area">
+    <form action="" id="survey-form">
+
+      <div class="center">
+        <ul>
+          <li>
+            <label for="name" id='name-label'>Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter you name..." required>
+          </li>
+          <li>
+            <label for="email" id="email-label">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email..." required>
+          </li>
+          <li>
+            <label for="phone" id="number-label">Age:</label>
+            <input type="number" name="age" id="number" min="1" max="110" placeholder="Age..." required>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Dropdown Question -->
+      <div class="center">
+        <label for="time">What is your favorite time of the day?</label>
+        <select name="time" id="dropdown">
+          <option value="day">Day</option>
+          <option value="night">Night</option>
+          <option value="morning">Morning</option>
+          <option value="evening">Evening</option>
+        </select>
+      </div>
+
+      <!-- Radio Question -->
+      <div class="bump-right">
+        <ul>
+          <li>
+            <label for="gender">What are you, or what do you identify as?</label>
+          </li>
+          <li>
+            <input type="radio" name="gender" value="male"> Male
+          </li>
+          <li>
+            <input type="radio" name="gender" value="female"> Female
+          </li>
+          <li>
+            <input type="radio" name="gender" value="other"> Other
+          </li>
+          <li>
+            <input type="radio" name="gender" value="other"> None
+          </li>
+        </ul>
+      </div>
+
+      <!-- Mode of Transportation Question -->
+      <div class="bump-right">
+        <ul>
+          <label for="travel-preference">How do you get around?</label>
+          <li>
+            <input type="checkbox" name="vehicle1" value="Bike"> I have a bike
+          </li>
+          <li>
+            <input type="checkbox" name="vehicle2" value="Car"> I have a car
+          </li>
+          <li>
+            <input type="checkbox" name="vehicle3" value="Boat"> I have a boat
+          </li>
+          <li>
+            <input type="checkbox" name="vehicle2" value="bus"> I ride the bus
+          </li>
+          <li>
+            <input type="checkbox" name="vehicle2" value="train"> I ride the train
+          </li>
+          <li>
+            <input type="checkbox" name="vehicle2" value="plane"> I fly in a plane
+          </li>
+        </ul>
+      </div>
+
+      <!-- Textarea Input -->
+      <div class="">
+        <ul>
+          <li>
+            <label for="more-info">Please tell me anything I may have forgot to ask</label>
+          </li>
+          <li>
+            <textarea name="message" id="" rows="5" cols="50"></textarea>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Submit Button -->
+      <button id="submit">Submit</button>
+    </form>
+  </div>
+
+</body>
+
+</html>

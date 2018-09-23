@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://images.pexels.com/photos/1323712/pexels-photo-1323712.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  color: #2e86c1;
+  height: 100%;
+}
+
+h1 {
+  color: #333;
+  font-size: 3rem;
+  text-align: center;
+}
+
+p {
+  color: #333;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr;
+  font-size: 1.1rem;
+  background: #424949;
+  box-shadow: 5px 10px 5px 5px #000;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  max-width: 100%;
+  max-height: 100%;
+  overflow: auto;
+}
+
+#form-area {
+}
+
+select {
+  margin: auto;
+}
+
+label {
+  margin: auto;
+}
+
+input {
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  margin: auto;
+}
+
+textarea {
+  margin: auto;
+}
+
+.center {
+  margin: 1rem;
+  line-height: 1.5;
+}
